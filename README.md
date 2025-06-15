@@ -12,6 +12,9 @@ The application allows users to efficiently manage their daily tasks by providin
 
 ---
 
+## Preview Image
+![image](https://github.com/user-attachments/assets/fda834e6-25d9-4272-acf8-dfc22372cea1)
+
 ## ✨ Features
 
 - 📌 Add new tasks with a description
