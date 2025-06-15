@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  --bg-main: #fff6fb;
+  --text-main: #4b2e2e;
+  --accent: #8bd1bd;
+  --accent-dark: #682836;
+  --completed-bg: #e0ffe0;
+  --pending-bg: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff0f6;
+  color: #4b2e2e;
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #6b4c4c;
+}
+
+button {
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 12px;
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--accent-dark);
+  transform: scale(1.05);
+}
+
+input[type='text'] {
+  padding: 0.6em;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(255, 105, 135, 0.1);
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(255, 105, 135, 0.15);
+}
+
+.completed {
+  background-color: var(--completed-bg);
+  text-decoration: line-through;
+}
+
+.pending {
+  background-color: var(--pending-bg);
+}
+
+img {
+  max-width: 120px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
